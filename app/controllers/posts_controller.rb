@@ -12,7 +12,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     if @post.save
-      redirect_to @post
+      redirect_to posts_path #I have to redirect to home since I have no show action at the moment
     else
       render :new
     end
