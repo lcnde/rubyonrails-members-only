@@ -1,5 +1,8 @@
+<br><br>
 <%= form_with model: @post do |form| %>
-<%= form.text_field :title %>
-<%= form.text_area :body, size: "60x10" %>
-<%= form.submit "Create" %>
+<%= form.label "Title" %><br>
+<%= form.text_field :title %><br><br>
+<%= form.label "Body" %><br>
+<%= form.text_area :body, size: "60x10" %><br><br>
+<%= form.submit %>
 <% end %>
