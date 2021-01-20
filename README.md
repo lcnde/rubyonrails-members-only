@@ -1,24 +1,3 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+You can create new posts that will be displayed on the homepage. I used Devise to let the user sign up. Only signed up users should be able to create posts, and view the authors and the content of other posts. Everyone can see the title of the homepage posts.
