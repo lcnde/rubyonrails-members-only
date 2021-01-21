@@ -1,6 +1,6 @@
 # Rails Members Only
 
-Rails Members Only is a website made as assignment at The Odin Project
+Rails Members Only is a website made as assignment at The Odin Project.
 
 ## Description
 
@@ -8,7 +8,7 @@ The website allows users to create an account and login. Only logged in users ca
 
 ## Updates
 
-1. Now the user_id is added to the database from the controller instead from a hidden_field from the form.
+1. Now the user_id is handled by the controller instead of a hidden_field from the form.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
