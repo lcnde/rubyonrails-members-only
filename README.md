@@ -1,3 +1,14 @@
-# README
+# Rails Members Only
 
-You can create new posts that will be displayed on the homepage. I used Devise to let the user sign up. Only signed up users should be able to create posts, and view the authors and the content of other posts. Everyone can see the title of the homepage posts.
+Rails Members Only is a website made as assignment at The Odin Project
+
+## Description
+
+The website allows users to create an account and login. Only logged in users can create posts and view other posts and their authors. 
+
+## Updates
+
+
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
