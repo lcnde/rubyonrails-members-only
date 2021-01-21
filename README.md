@@ -1,24 +1,14 @@
-# README
+# Rails Members Only
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails Members Only is a website made as assignment at The Odin Project
 
-Things you may want to cover:
+## Description
 
-* Ruby version
+The website allows users to create an account and login. Only logged in users can create posts and view other posts and their authors. 
 
-* System dependencies
+## Updates
 
-* Configuration
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
