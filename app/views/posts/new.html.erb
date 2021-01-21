@@ -4,6 +4,6 @@
 <%= form.text_field :title %><br><br>
 <%= form.label "Body" %><br>
 <%= form.text_area :body, size: "60x10" %><br><br>
-<%= form.hidden_field :user_id, value: current_user.id %>
+<%# form.hidden_field :user_id, value: current_user.id %>
 <%= form.submit %>
 <% end %>

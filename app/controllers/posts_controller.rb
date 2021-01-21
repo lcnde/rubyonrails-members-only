@@ -15,6 +15,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
+    @post[:user_id] = current_user.id
     if @post.save
       redirect_to posts_path #I have to redirect to home since I have no show action at the moment
     else
@@ -23,8 +24,9 @@ class PostsController < ApplicationController
   end
 
   private
+
   def post_params
-    params.require(:post).permit(:title, :body, :user_id)
+    params.require(:post).permit(:title, :body)
   end
 =begin
   private
