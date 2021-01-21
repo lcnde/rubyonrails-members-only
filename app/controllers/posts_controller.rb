@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  #before_action :require_login, only: [:new, :create]
+  before_action :authenticate_user!, only: [:new, :create, :show] #forces the user to be authenticated
 
   def index
     @posts = Post.all
@@ -15,6 +15,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
+    @post[:user_id] = current_user.id
     if @post.save
       redirect_to posts_path #I have to redirect to home since I have no show action at the moment
     else
@@ -23,6 +24,7 @@ class PostsController < ApplicationController
   end
 
   private
+
   def post_params
     params.require(:post).permit(:title, :body)
   end
