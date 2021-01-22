@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :show] #forces the user to be authenticated
+  before_action :authenticate_user!, only: [:new, :create, :show] #forces the user to be 
+                                                                  #authenticated
 
   def index
     @posts = Post.all
@@ -14,7 +15,9 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = current_user.posts.new(post_params) #to get the user_id to the post you have to scope the new post to the current user
+    @post = current_user.posts.new(post_params) #to get the user_id to the post you have to scope 
+                                                #the new post to the current user aka it sets the 
+                                                #user_id implicitly based on the current user
     #@post[:user_id] = current_user.id
     if @post.save
       redirect_to posts_path #I have to redirect to home since I have no show action at the moment
