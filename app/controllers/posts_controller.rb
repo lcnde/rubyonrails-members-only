@@ -15,7 +15,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = current_user.posts.new(post_params) #to get the user_id to the post you have to scope 
+    @post = current_user.posts.new(post_params) #to get the user_id to the post, you have to scope 
                                                 #the new post to the current user aka it sets the 
                                                 #user_id implicitly based on the current user
     #@post[:user_id] = current_user.id
