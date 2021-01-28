@@ -32,7 +32,7 @@ class PostsController < ApplicationController
     params.require(:post).permit(:title, :body)
   end
 =begin
-  This method has been replaced by before_action
+  This solution has been replaced by before_action
   def require_login
     unless logged_in?
       flash[:error] = "You must be logged in to create a post"
